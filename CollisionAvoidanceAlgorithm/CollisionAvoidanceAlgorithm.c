@@ -19,7 +19,8 @@ char CheckLaneStatus(DistanceFromScanCenter legacy_lane_marker) {
 
 void CollisionAvoidanceAlgorithm()
 {
-	//legacy_lane_marker = 1.880;
+
+	legacy_lane_marker = 1.880;
 	printf("%d" , CheckLaneStatus(legacy_lane_marker));
 	if (GetDistanceFrontRadar(RF) == GetForwardDistance(RF))
 	{
