@@ -42,6 +42,6 @@ float return_arr[2]={0};
 
 
 void CollisionAvoidanceAlgorithm();
-char CheckLaneStatus();
+char CheckLaneStatus(DistanceFromScanCenter legacy_lane_marker);
 
 #endif
