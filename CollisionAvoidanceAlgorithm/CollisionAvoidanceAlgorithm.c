@@ -7,7 +7,10 @@
  Description   : Source file for Main Collision Avoidance Algorithm
  =====================================================================================
  */
+
+/* function to determine if the car reached the other lane */
 char CheckLaneStatus(DistanceFromScanCenter legacy_lane_marker) {
+	/* check on the value returned from the lane marker sensor */
 	if (legacy_lane_marker >= (float)1.870 && legacy_lane_marker <= (float)1.880) {
 		lane_change_flag = 1;
 	}
